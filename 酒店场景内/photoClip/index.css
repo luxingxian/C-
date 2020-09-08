@@ -1,0 +1,56 @@
+
+* 
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html 
+{
+	-ms-touch-action: none;
+	/*font-size: 16px;*/ /*默认是16px*/
+}
+@media screen and (max-width: 800px) 
+{
+html 
+{
+	font-size: 15px;
+}
+}
+@media screen and (max-width: 640px) 
+{
+html 
+{
+	font-size: 14px;
+}
+}
+@media screen and (max-width: 560px) 
+{
+html 
+{
+	font-size: 13px;
+}
+}
+@media screen and (max-width: 360px) 
+{
+html 
+{
+	font-size: 12px;
+}
+}
+@media screen and (max-width: 240px) 
+{
+html 
+{
+	font-size: 10px;
+}
+}
+body, ul, li 
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: "Times New Roman",Georgia,Serif,arial,sans-serif;
+	overflow: hidden; /* this is important to prevent the whole page to bounce */
+}
+

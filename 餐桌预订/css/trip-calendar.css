@@ -1,0 +1,199 @@
+﻿
+* {margin: 0;padding: 0;border: 0;font-family: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self;list-style-type: none;}
+a {text-decoration: none;}
+a:hover,a:focus {text-decoration: none;outline: none;}
+ul {list-style: none;}
+img {width: 100%;height: 100%;}
+i,em {font-style: normal;}
+.fl {float: left;}
+.fr {float: right;}
+.clear:after { clear:both; content:""; display:block; }
+.clear { zoom :1;}
+a,img,button,input,textarea {-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+input,textarea {-webkit-appearance:none;color: #000;}
+table{border-spacing:0;border-collapse:collapse;}
+/*头部*/
+.top {width: 100%;height:3.2em;background: #1a1a1a;text-align: center;line-height:3.2em;position: fixed;top: 0;z-index: 99;}
+.top p {color: #fff;width: 100%;font-size: 1.3em;}
+.top p a {width: 0.6em;height: 0.95em;display: inline-block;float: left;margin-left: 0.5em; vertical-align: sub;}
+#J_Calendar{margin-top: 3.5em;}
+.calendar-bounding-box{position:relative;color:#404040;font:12px Arial;}
+.calendar-bounding-box .container{background-color:#FFF;zoom:1}
+.calendar-bounding-box iframe{position:absolute;top:0;left:0;z-index:-1;border-width:0;}
+.calendar-bounding-box .message-box{position:relative;z-index:1;margin-bottom:-1px;padding:5px 10px;line-height:19px;border:1px solid #FF8080;background-color:#FFF2F2;display:none;zoom:0;text-align:left;}
+.calendar-bounding-box .content-box{position:relative;zoom:1;letter-spacing:-0.31em;*letter-spacing:normal;word-spacing:-0.43em; }
+.calendar-bounding-box .content-box .arrow{ position: relative;}
+.calendar-bounding-box .content-box .arrow .prev-btn{position:absolute;top:4.8%;width:2em;height:2em;cursor:pointer;z-index: 22;}
+.calendar-bounding-box .content-box .arrow .prev-btn img{ width: 2em; height:  2em;}
+.calendar-bounding-box .content-box .arrow .next-btn img{ width:  2em; height: 2em;}
+.calendar-bounding-box .content-box .arrow .next-btn{position:absolute;top:4.8%;width:2em;height:2em;cursor:pointer;z-index: 22;}
+.calendar-bounding-box .content-box .arrow span.close-btn{top:10px;right:10px;width:17px;height:17px;margin:0;background-position:-40px 0px;}
+.calendar-bounding-box .content-box .arrow span.prev-btn{left:18px; top: 0.8em;}
+.calendar-bounding-box .content-box .arrow span.next-btn{right:18px;top: 0.8em;}
+.calendar-bounding-box .content-box .arrow span.prev-btn-disabled{left:10px;cursor:default;background-position:0 -38px;}
+.calendar-bounding-box .content-box .arrow span.next-btn-disabled{right:10px;cursor:default;background-position:-20px -38px;}
+.calendar-bounding-box .content-box .inner{width: 95%; background-color:#FFF;padding:0 10px;zoom:1;*display:inline;letter-spacing:normal;word-spacing:normal;vertical-align:top; box-sizing: border-box; margin: 0 auto; }
+.calendar-bounding-box .content-box .inner h4{margin:0;padding:0;font-size:1.3em;line-height:2.8em;text-align:center;border-bottom:1px solid #E4E4E4; font-weight: normal; color:#666; }
+.calendar-bounding-box .content-box .inner h4 select{font:12px/1.5 Arial;margin:0 5px;}
+.calendar-bounding-box .content-box .inner table{ width: 100%; border-spacing:0;border-collapse:collapse; color: #666; }
+.calendar-bounding-box .content-box .inner table th{height:2.5em;border-bottom:1px solid #E4E4E4; box-sizing: border-box;}
+.calendar-bounding-box .content-box .inner table th.weekend{}
+.calendar-bounding-box .content-box .inner table td{padding:0;width:25px;height:2.5em;text-align:center;border:1px solid #E5E5E5;box-sizing: border-box;}
+.calendar-bounding-box td a{width:100%;height:2.5em;display:block;color:#404040;line-height:2.5em;text-decoration:none; }
+.calendar-bounding-box .content-box .inner table{ font-size: 1.3em;}
+.calendar-bounding-box td.disabled a{color:#DCDCDC!important;background-color:transparent!important;}
+.calendar-bounding-box td.disabled a:hover{color:#DCDCDC;cursor:default;}
+.calendar-bounding-box td.start-date a,
+.calendar-bounding-box td a:hover,
+.calendar-bounding-box td.end-date a:hover,
+.calendar-bounding-box td.selected-date a,
+.calendar-bounding-box td.selected-range a:hover{color:#FFF;background-color:#ffd65b;}
+.calendar-bounding-box td.end-date a,
+.calendar-bounding-box-style td a:hover,
+.calendar-bounding-box-style td.end-date a:hover,
+.calendar-bounding-box-style td.start-date a:hover,
+.calendar-bounding-box-style td.selected-range a:hover{color:#FFF;background-color:#E2AD44;}
+.calendar-bounding-box-style td.hover a{color:#404040;background-color:#BBDDF4!important;}
+.calendar-bounding-box td.selected-range a{background-color:#D9F2FF;}
+.calendar-bounding-box .hidden{display:none;zoom:0;}
+.calendar-bounding-box .visible{display:block;zoom:1;}
+.calendar-input-wrap{position:relative;display:inline-block;zoom:1;*display:inline;}
+.calendar-input-wrap input{outline:none;}
+.calendar-input-wrap span{position:absolute;cursor:text;top:50%;right:5px;height:15px;color:#A1A1A1;overflow:hidden;margin-top:-7.5px;font:400 12px/15px Arial;background:url(http://img03.taobaocdn.com/tps/i3/T1upvrXbFdXXbRt4oj-57-106.png) -999px -999px no-repeat;}
+.calendar-input-wrap .calendar-start-icon{padding-right:25px;background-position:right -76px;}
+.calendar-input-wrap .calendar-end-icon{padding-right:25px;background-position:right -91px;}
+
+
+.s_mian{width: 100%; margin-top: 2.5em; background: #F1F1F1;/* height:4em; */padding: 0.6em 0 0.15em 0;}
+.s_mian ul{width: 95%; margin:0 auto 0;}
+.s_mian ul li{width: 31%; margin-right: 3%; background:#fff; height: 3.7em; border-radius: 0.5em; font-size: 1em; color: #666; }
+.s_mian ul li:last-child{margin-right: 0;}
+.s_mian ul li span{ display: block; text-align: center; /*margin-top: 0.2em;*/}
+.s_mian ul li span:first-child{ margin-top: 0.6em;}
+.s_mian ul li.on{ background: #ffd65b;}
+.s_btn_list button{ outline:none; display: block; width: 5em; height: 2.1em; text-align: center; font-size: 1em; margin:2em auto; border-radius: 0.3em; background: #ffd65b; color: #666; }
+/* 元旦 */
+/*.calendar-bounding-box td.start-date .yuandan,
+.calendar-bounding-box td.selected-date .yuandan,
+.calendar-bounding-box td .yuandan:hover,
+.calendar-bounding-box td.end-date .yuandan:hover,
+.calendar-bounding-box td.selected-range .yuandan:hover{background-position:-31px 0;}
+.calendar-bounding-box td.end-date .yuandan,
+.calendar-bounding-box-style td .yuandan:hover,
+.calendar-bounding-box-style td.end-date .yuandan:hover,
+.calendar-bounding-box-style td.selected-range .yuandan:hover{background-position:-62px 0;}
+.calendar-bounding-box td.selected-range .yuandan{background-position:-93px 0;}
+.calendar-bounding-box td.hover .yuandan{background-position:-124px 0;}*/
+/* 除夕 */
+/*.calendar-bounding-box td.start-date .chuxi,
+.calendar-bounding-box td.selected-date .chuxi,
+.calendar-bounding-box td .chuxi:hover,
+.calendar-bounding-box td.end-date .chuxi:hover,
+.calendar-bounding-box td.selected-range .chuxi:hover{background-position:-31px -30px;}
+.calendar-bounding-box td.end-date .chuxi,
+.calendar-bounding-box-style td .chuxi:hover,
+.calendar-bounding-box-style td.end-date .chuxi:hover,
+.calendar-bounding-box-style td.selected-range .chuxi:hover{background-position:-62px -30px;}
+.calendar-bounding-box td.selected-range .chuxi{background-position:-93px -30px;}
+.calendar-bounding-box td.hover .chuxi{background-position:-124px -30px;}*/
+/* 春节 */
+/*.calendar-bounding-box td.start-date .chunjie,
+.calendar-bounding-box td.selected-date .chunjie,
+.calendar-bounding-box td .chunjie:hover,
+.calendar-bounding-box td.end-date .chunjie:hover,
+.calendar-bounding-box td.selected-range .chunjie:hover{background-position:-31px -60px;}
+.calendar-bounding-box td.end-date .chunjie,
+.calendar-bounding-box-style td .chunjie:hover,
+.calendar-bounding-box-style td.end-date .chunjie:hover,
+.calendar-bounding-box-style td.selected-range .chunjie:hover{background-position:-62px -60px;}
+.calendar-bounding-box td.selected-range .chunjie{background-position:-93px -60px;}
+.calendar-bounding-box td.hover .chunjie{background-position:-124px -60px;}*/
+/* 元宵 */
+/*.calendar-bounding-box td.start-date .yuanxiao,
+.calendar-bounding-box td.selected-date .yuanxiao,
+.calendar-bounding-box td .yuanxiao:hover,
+.calendar-bounding-box td.end-date .yuanxiao:hover,
+.calendar-bounding-box td.selected-range .yuanxiao:hover{background-position:-31px -90px;}
+.calendar-bounding-box td.end-date .yuanxiao,
+.calendar-bounding-box-style td .yuanxiao:hover,
+.calendar-bounding-box-style td.end-date .yuanxiao:hover,
+.calendar-bounding-box-style td.selected-range .yuanxiao:hover{background-position:-62px -90px;}
+.calendar-bounding-box td.selected-range .yuanxiao{background-position:-93px -90px;}
+.calendar-bounding-box td.hover .yuanxiao{background-position:-124px -90px;}*/
+/* 清明 */
+/*.calendar-bounding-box td.start-date .qingming,
+.calendar-bounding-box td.selected-date .qingming,
+.calendar-bounding-box td .qingming:hover,
+.calendar-bounding-box td.end-date .qingming:hover,
+.calendar-bounding-box td.selected-range .qingming:hover{background-position:-31px -120px;}
+.calendar-bounding-box td.end-date .qingming,
+.calendar-bounding-box-style td .qingming:hover,
+.calendar-bounding-box-style td.end-date .qingming:hover,
+.calendar-bounding-box-style td.selected-range .qingming:hover{background-position:-62px -120px;}
+.calendar-bounding-box td.selected-range .qingming{background-position:-93px -120px;}
+.calendar-bounding-box td.hover .qingming{background-position:-124px -120px;}*/
+/* 五一 */
+/*.calendar-bounding-box td.start-date .wuyi,
+.calendar-bounding-box td.selected-date .wuyi,
+.calendar-bounding-box td .wuyi:hover,
+.calendar-bounding-box td.end-date .wuyi:hover,
+.calendar-bounding-box td.selected-range .wuyi:hover{background-position:-31px -150px;}
+.calendar-bounding-box td.end-date .wuyi,
+.calendar-bounding-box-style td .wuyi:hover,
+.calendar-bounding-box-style td.end-date .wuyi:hover,
+.calendar-bounding-box-style td.selected-range .wuyi:hover{background-position:-62px -150px;}
+.calendar-bounding-box td.selected-range .wuyi{background-position:-93px -150px;}
+.calendar-bounding-box td.hover .wuyi{background-position:-124px -150px;}*/
+/* 端午 */
+/*.calendar-bounding-box td.start-date .duanwu,
+.calendar-bounding-box td.selected-date .duanwu,
+.calendar-bounding-box td .duanwu:hover,
+.calendar-bounding-box td.end-date .duanwu:hover,
+.calendar-bounding-box td.selected-range .duanwu:hover{background-position:-31px -180px;}
+.calendar-bounding-box td.end-date .duanwu,
+.calendar-bounding-box-style td .duanwu:hover,
+.calendar-bounding-box-style td.end-date .duanwu:hover,
+.calendar-bounding-box-style td.selected-range .duanwu:hover{background-position:-62px -180px;}
+.calendar-bounding-box td.selected-range .duanwu{background-position:-93px -180px;}
+.calendar-bounding-box td.hover .duanwu{background-position:-124px -180px;}*/
+/* 中秋 */
+/*.calendar-bounding-box td.start-date .zhongqiu,
+.calendar-bounding-box td.selected-date .zhongqiu,
+.calendar-bounding-box td .zhongqiu:hover,
+.calendar-bounding-box td.end-date .zhongqiu:hover,
+.calendar-bounding-box td.selected-range .zhongqiu:hover{background-position:-31px -210px;}
+.calendar-bounding-box td.end-date .zhongqiu,
+.calendar-bounding-box-style td .zhongqiu:hover,
+.calendar-bounding-box-style td.end-date .zhongqiu:hover,
+.calendar-bounding-box-style td.selected-range .zhongqiu:hover{background-position:-62px -210px;}
+.calendar-bounding-box td.selected-range .zhongqiu{background-position:-93px -210px;}
+.calendar-bounding-box td.hover .zhongqiu{background-position:-124px -210px;}*/
+/* 国庆 */
+/*.calendar-bounding-box td.start-date .guoqing,
+.calendar-bounding-box td.selected-date .guoqing,
+.calendar-bounding-box td .guoqing:hover,
+.calendar-bounding-box td.end-date .guoqing:hover,
+.calendar-bounding-box td.selected-range .guoqing:hover{background-position:-31px -240px;}
+.calendar-bounding-box td.end-date .guoqing,
+.calendar-bounding-box-style td .guoqing:hover,
+.calendar-bounding-box-style td.end-date .guoqing:hover,
+.calendar-bounding-box-style td.selected-range .guoqing:hover{background-position:-62px -240px;}
+.calendar-bounding-box td.selected-range .guoqing{background-position:-93px -240px;}
+.calendar-bounding-box td.hover .guoqing{background-position:-124px -240px;}*/
+/* 今天 */
+/*.calendar-bounding-box td .today {background-position:0 -270px;}
+.calendar-bounding-box td.start-date .today,
+.calendar-bounding-box td.selected-date .today,
+.calendar-bounding-box td .today:hover,
+.calendar-bounding-box td.end-date .today:hover,
+.calendar-bounding-box td.selected-range .today:hover{background-position:-31px -270px;}
+.calendar-bounding-box td.end-date .today,
+.calendar-bounding-box-style td .today:hover,
+.calendar-bounding-box-style td.end-date .today:hover,
+.calendar-bounding-box-style td.selected-range .today:hover{background-position:-62px -270px;}
+.calendar-bounding-box td.selected-range .today{background-position:-93px -270px;}
+.calendar-bounding-box td.hover .today{background-position:-124px -270px;}*/
+
+/*#J_Calendar{ width: 100%;}*/
+
+

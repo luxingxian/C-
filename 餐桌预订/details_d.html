@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no," />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>订单详情</title>
+		<link rel="stylesheet" href="css/Restaurant.css"/>	
+	</head>
+	<body style=" background: #f1f1f1;">
+	<!--头部-->
+	<div class="top">
+		<p>
+			<a href="cancellation.html"><img src="images/icon_1.png"></a>订单详情
+		</p>
+	</div>
+	<!--头部-->
+	<!--主体-->
+		<div class="content">
+			<p class="max">交易关闭(商家已取消)</p>
+			<div class="con_min">				
+				<p class="max_p">餐饮</p>
+				<ul>
+					<li class="clear">
+						<span class="fl">用餐时间 : </span>
+						<p class="fl">2016-10-8 &nbsp;&nbsp;12:00</p>
+					</li>
+					<li class="clear">
+						<span class="fl">用餐人数 : </span>
+						<p class="fl">4人</p>
+					</li>
+					<li class="clear">
+						<span class="fl">订桌类型 : </span>
+						<p class="fl">仅包间</p>
+					</li>
+				</ul>
+			</div>
+			<div class="con_min">								
+				<ul>
+					<li class="clear">
+						<span class="fl">用餐姓名 : </span>
+						<p class="fl">张三</p>
+					</li>
+					<li class="clear">
+						<span class="fl">用餐人手机号 : </span>
+						<p class="fl">15523451777</p>
+					</li>			
+				</ul>
+			</div>
+			<div class="con_min">								
+				<ul>
+					<li class="clear">
+						<span class="fl">代订人姓名 : </span>
+						<p class="fl">张三</p>
+					</li>
+					<li class="clear">
+						<span class="fl">代订人手机号 : </span>
+						<p class="fl">15523451777</p>
+					</li>			
+				</ul>
+			</div>
+			<div class="tip">				
+					<p><i></i>联系酒店</p>
+			</div>
+			<div class="con_min">								
+				<ul>
+					<li class="clear">
+						<span class="fl">订单编号 : </span>
+						<p class="fl">054612345676534</p>
+					</li>
+					<li class="clear">
+						<span class="fl">提交时间 : </span>
+						<p class="fl">1026-10-4 &nbsp;&nbsp;18:00:35</p>
+					</li>			
+				</ul>
+			</div>
+		</div>
+		<div class="text">
+			
+		</div>
+	<!--主体-->	
+		<div class="bottom">
+			<ul>
+				<li>
+					<P class="palte1">
+						<a href="javascript:;"><span class="dark yell">删除订单</span></a>
+						<a href="javascript:;"><span class="light">再次预定</span></a>
+					</P>
+				</li>				
+			</ul>
+		</div>
+		
+	<!--删除订单弹框-->
+		<div class="note_r">
+			<div class="s_note">
+				<span class="msg"></span>
+				<div class="vote">
+					<p>确定要删除订单吗？</p>
+				</div>
+				<div class="vote_r clear">
+					<span class="vo_r fl btn1">放弃删除</span>
+					<span class="vo_l fl btn1_ok">确定</span>
+				</div>
+			</div>			
+		</div>		
+	<!--删除订单弹框-->
+	<!--删除订单弹框-->
+		<div class="etime">
+			<p>删除订单成功</p>
+		</div>
+	<!--删除订单弹框-->
+	
+	<script src="js/oder.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>
+	/*删除订单*/
+			$(function(){
+		    	$('.yell').each(function(){
+		    		$(this).click(function(){
+		    			$('.note_r').fadeIn();
+		    		});
+		    	})	    	
+		    	$('.msg,.vo_r').click(function(){
+		    		$('.note_r').fadeOut();
+		    	})	    	
+		   })
+	  /*删除成功*/
+		    $(function(){
+	    		$('.btn1').click(function(){
+	    			$('.note_r').fadeOut();
+	    			
+	    		});
+	    		$(".btn1_ok").click(function(){
+	    			$('.note_r').fadeOut();
+	    			$('.etime').fadeIn();
+	    			 setTimeout(function () { tab() }, 2000);
+	    		})
+	    		
+	  		})
+	    	function tab(){
+    			$('.etime').fadeOut();
+    		}		
+	</script>		
+	</body>
+</html>

@@ -1,0 +1,54 @@
+* {margin: 0;padding: 0;border: 0;font-family: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self;list-style-type: none;}
+a {text-decoration: none; }
+a:hover,a:focus {text-decoration: none;outline: none;}
+ul {list-style: none;}
+img {width: 100%;height: 100%;}
+i,em {font-style: normal;}
+.fl {float: left;}
+.fr {float: right;}
+.clear:after { clear:both; content:""; display:block; }
+.clear { zoom :1;}
+a,img,button,input,textarea {-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+input,textarea {-webkit-appearance:none;color: #000;}
+table{border-spacing:0;border-collapse:collapse;}
+body{height: 100%;background: #efeff4;}
+/*头部nav 公用*/
+.nav_bar{height: 2.2rem;line-height: 2.2rem;background-color: #0b0b0b;color: #fff;font-size: 0.9em;position: fixed;top:0;left: 0;width: 0;width: 100%;z-index: 99;}
+.nav_bar a img{height: 0.8rem;width: auto;float: left;margin-left: 0.5em;margin-top: 0.7rem;}
+.nav_bar a.search img{height: 0.9rem;margin-top: 0.65rem;}
+.nav_bar a.user img{height: 1.05rem;margin-left: 0.8em;margin-top: 0.575rem;float: right;margin-right: 0.5em;} 
+.nav_bar .title{text-align: center;}
+.nav_bar .right{text-align: left;}
+/*头部nav 公用*/
+
+
+.s_mian .content{ width: 100%; background: #efeff4; margin-top: 2.2rem;}
+.s_mian .content .s_content{ width: 95%; margin: 0 auto;}
+.s_mian .content .s_time{ padding-bottom:0.25rem;}
+.s_mian .content .s_time:first-child{padding-top: 0.25rem;}
+.s_mian .content .s_content .itime{ position: relative;}
+.s_mian .content .s_content .itime .s_img{ display: block; width: 100%; height: 7.5em;}
+.s_mian .content .s_content .itime .s_shadow{ width: 4.45em; height: 1.4em; text-align: center; color: #fff; background-color: rgba(0,0,0,.6); position: absolute; bottom: 1.25em; left: 0;}
+.s_mian .content .s_content .itime .s_shadow span{ font-size: 0.75em;line-height: 1.4em; }
+.s_mian .content .s_content .s_butoon{ width: 100%; height: 2.5rem; background: #fff;}
+.s_mian .content .s_content .s_butoon .s_btnl{ width: 70%; padding-top: 0.3rem;line-height: 1rem;}
+.s_mian .content .s_content .s_butoon .s_btnl .s_tp{ font-size: 0.75em; color: #000; font-weight:bold; margin-left: 0.3em;}
+.s_mian .content .s_content .s_butoon .s_btnl .s_tp1{ font-size: 0.65em; color: #808080;margin-left: 0.3em;}
+.s_mian .content .s_content .s_btn_r{ width: 25%; background:  #0e76d8; text-align: center;height: 2.5rem; line-height: 2.5em; }
+.s_mian .content .s_content .s_btn_r:hover{background: #026cbf;}
+.s_mian .content .s_content .s_butoon .s_btn_r a{ color: #fff; font-size: 0.7em;}
+.s_mian .content .s_content .s_butoon .s_btn2{ width: 48%; padding: 0.38rem 0;}
+.s_mian .content .s_content .s_butoon .s_btn2 .s_tp{ font-size: 0.75em; color: #000; font-weight: bold; margin-left: 0.3em;}
+.s_mian .content .s_content .s_butoon .s_btn2 .s_tp1{ font-size: 0.65em; color: #808080;margin-left: 0.3em; }
+.s_mian .content .s_content .s_black{ width: 40%; text-align: center;height: 2.5rem; line-height: 2.5rem;  padding-left: 0.5em;}
+.s_mian .content .s_content .s_black a{font-size: 0.7em; color: #1e1f21;}
+/*无网络弹窗*/
+.tan_drop{background-color: rgba(0,0,0,.4);position: fixed;top:0;bottom: 0;left:0;right: 0;display: none;z-index: 101;}
+.no_network{background-color: rgba(0,0,0,.4);position: fixed;top:0;bottom: 0;left:0;right: 0;display: none;z-index: 101;}
+.tan_box{width: 11em;background-color: #fff;border-radius: 0.3rem;position: absolute;top:30%;left:50%;margin-left: -5.5em;}
+.tan_box .text{text-align: center;color: #424242;font-size: 0.65em;margin: 2.7em 0 1.35em 0;}
+.tan_box .room_btn{text-align: center;}
+.tan_box .room_btn a{text-align: center;display: inline-block;height: 1.45rem;line-height: 1.45rem;width: 8rem;border-radius: 1.45rem;background-color: #0e76d8;color: #fff;font-size:0.65rem ;border:1px solid #0e76d8;}
+.tan_box .room_btn.btn2 a{background-color: #fff;margin: 0.75em 0 1.25em 0;color: #0e76d8;border:1px solid #0e76d8;box-sizing: border-box;}
+.tan_box img{height: 2.5em;width: 2.5em;position: absolute;top:-1.25em;left:50%;margin-left: -1.25em;}
+.no_network .tan_box .room_btn,.tan4 .tan_box .room_btn{margin: 1em 0 1.2em 0;}

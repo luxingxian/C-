@@ -1,0 +1,105 @@
+* {margin: 0;padding: 0;border: 0;font-family: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self;list-style-type: none;}
+a {text-decoration: none;}
+a:hover,a:focus {text-decoration: none;outline: none;}
+ul {list-style: none;}
+img {width: 100%;height: 100%;}
+i,em {font-style: normal;}
+.fl {float: left;}
+.fr {float: right;}
+.clear:after { clear:both; content:""; display:block; }
+.clear { zoom :1;}
+a,img,button,input,textarea {-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+input,textarea {-webkit-appearance:none;color: #000;}
+table{border-spacing:0;border-collapse:collapse;}
+
+/*头部*/
+.top {width: 100%;height:2.2em;background: #1a1a1a;text-align: center;line-height:2.2em;position: fixed;top: 0;z-index: 99;}
+.top p {color: #fff;width: 100%;font-size: 0.9em;}
+.top p a {width: 0.525em;height: 0.925em;display: inline-block;float: left;margin-left: 0.5em;}
+
+/*订餐页面*/
+.min{ width: 95%; margin: 0 auto;}
+.min p{ width: 100%; height: 1.8rem; line-height: 1.8rem; background: #f7d38a; color: #666; font-size: 0.75em; text-align: center;  border-radius: 0.3em;}
+.min .min_r{margin: 9.05em 0 1.6em 0;}
+
+
+/*订单列表*/
+.guide{ width: 16rem; background: #f1f1f1;margin-top:2.2em;}
+.guide .guide_box{width:16rem; background: #fff;}
+.guide .guide_box .search{ width: 15rem; margin: 0 auto;padding: 0.25em 0;}
+.guide .guide_box .search li{ width: 33%; height: 0.9em; line-height: 0.9em; text-align: center;}
+.guide .guide_box .search li.second,.guide .guide_box .search li.first{border-right:1px solid #bfbfbf ;}
+.guide .guide_box .search a{ display: block; color: #9f9f9f; font-size: 0.75em;}
+.guide .guide_box .search a i{ display:inline-block; width: 0.6em; height: 0.6em; background:url(../images/icon_7.png) no-repeat center; background-size: 100% 100%; margin: 0 0.3em;}
+.guide .guide1{ width: 15rem; margin:0.35em auto; border: 1px solid #bbb; box-sizing: border-box;}
+.guide .guide1 li{height: 1.25rem; line-height: 1.25rem; width: 50%; text-align: center; font-size: 0.65em; color: #666;box-sizing: border-box; border-right: 1px solid #bbb;}
+.guide .guide1 li:last-child{ border-right: 0;}
+.guide .guide1 li.activ{ background: #bbb;color: #fff;}
+.guide .joinus{ width: 16rem; background: #fff; margin-bottom: 0.25em;}
+.guide .joinus .joinus1{ width: 15rem; margin:0 auto;}
+.guide .joinus .joinus1 .jon{ height:1.625rem; line-height:1.625rem; font-size: 0.65em; color: #333;}
+.guide .joinus .joinus1 .jon .jon_r{ color: #ff3333;}
+.guide .joinus .joinus1 .jon .jon_l{ color: #999;}
+.guide .joinus .joinus1 ul{ border-bottom: 1px solid #f1f1f1;}
+.guide .joinus .joinus1 ul li{ height: 1.5em; line-height: 1.5em;}
+.guide .joinus .joinus1 ul li span{ width: 30%; text-align: left; font-size: 0.65em; color: #333;}
+.guide .joinus .joinus1 ul li p{ width: 65%;font-size: 0.65em;color: #333; margin-left: 0.5em; }
+.guide .joinus .joinus1 ul li .yellow{ color: #333;}
+.s_div{background: #fff;}
+.s_div2{ width: 15rem; margin: 0 auto;}
+.s_div .joinus3{ display: block; width: 3.7rem; height: 1.15rem; line-height: 1.15rem; text-align: center; font-size: 0.6em; background: #f1f1f1; color: #333; margin: 1em 0 1em 1em; border-radius: 0.25em;}
+.s_div .joinus2{ display: block; width: 3.7rem; height: 1.15rem; line-height: 1.15rem; text-align: center; font-size: 0.6em; background: #fddf97; color: #333; margin: 1em 0 1em 1em; border-radius: 0.25em;}
+/*删除弹框*/
+.note_r{width: 100%; height: 100%; position:fixed ; top:0; left: 0; background: #000;background: rgba(0,0,0,0.4);  z-index: 999999; display: none;}
+.note_r .s_note{width:9.5em; height:5.3em; background: #fff; position: absolute; top:50%; left: 50%; margin-left: -4.75em; margin-top:-2.65em ; border-radius: 0.25em;}
+.note_r .s_note .msg{ position: absolute; top:-0.4em; right: -0.3em; width: 1em; height: 1em; background:url(../images/icon_2.png) no-repeat; background-size: 1em 1em;}	
+.note_r .s_note .s_msg{ width: 2.3em; height: 2.32em; margin: 0.75em auto 0.5em;}
+.note_r .s_note .vote p{ line-height: 1.5em; margin: 2em 0 1.7em 0;}	
+.note_r .s_note .vote{font-size:0.65em; color: #666; text-align: center; }
+.note_r .s_note .vote_r{ width: 7.5rem; margin: 0 auto;}
+.note_r .s_note .vote_r .vo_r{ width: 3.4rem; height: 1.3rem; line-height: 1.3rem; text-align: center; background: #ffd266; font-size: 0.65em; color:#666; border-radius: 0.2em;}
+.note_r .s_note .vote_r .vo_l{ width: 3.4rem; height: 1.3rem; line-height: 1.3rem; text-align: center; background: #eeeeee; font-size: 0.65em; color:#666; border-radius: 0.2em;margin-left: 1em; }
+/*取弹框*/
+.note_l{width: 100%; height: 100%; position:fixed ; top:0; left: 0; background: #000;background: rgba(0,0,0,0.4);  z-index: 999999; display:none;}
+.note_l .s_note{width:9.5em; height:5.3em; background: #fff; position: absolute; top:50%; left: 50%; margin-left: -4.75em; margin-top:-2.65em ; border-radius: 0.25em;}
+.note_l .s_note .msg{ position: absolute; top:-0.4em; right: -0.3em; width: 0.9em; height: 0.9em; background:url(../images/icon_2.png) no-repeat; background-size: 0.9em 0.9em;}	
+.note_l .s_note .s_msg{ width: 2.3em; height: 2.32em; margin: 0.75em auto 0.5em;}
+.note_l .s_note .vote p{ line-height: 1.5em; margin: 2em 0 1.7em 0;}	
+.note_l .s_note .vote{font-size:0.65em; color: #666; text-align: center; }
+.note_l .s_note .vote_r{ width: 7.5rem; margin: 0 auto;}
+.note_l .s_note .vote_r .vo_r{ width: 3.4rem; height: 1.3rem; line-height: 1.3rem; text-align: center; background: #ffd266; font-size: 0.65em; color:#666; border-radius: 0.2em;}
+.note_l .s_note .vote_r .vo_l{ width: 3.4rem; height: 1.3rem; line-height: 1.3rem; text-align: center; background: #eeeeee; font-size: 0.65em; color:#666; border-radius: 0.2em;margin-left: 1em; }
+/*删除成功*/
+.etime{ width: 7rem;height: 2.715rem; line-height: 2.715rem; text-align: center; background: #000; color: #fff; position:fixed; top:50%; left: 50%;background: rgba(0,0,0,0.4);border-radius: 0.2em; font-size: 0.65em; margin-left: -3.5rem;  margin-top: -1.357rem; display: none;}
+/*取消成功*/
+.etime1{ width: 7rem;height: 2.715rem; line-height: 2.715rem; text-align: center; background: #000; color: #fff; position:fixed; top:50%; left: 50%;background: rgba(0,0,0,0.4);border-radius: 0.2em; font-size: 0.65em; margin-left: -3.5rem;  margin-top: -1.357rem;display: none;}
+
+/*订单详情*/
+.content{ width: 100%; margin-top: 2.2em; }
+.content .con_min{ width: 100%; background: #fff;}
+.content .con_min ul{ width: 15rem; margin: 0 auto;}
+.con_min{ width: 100%; background: #fff; margin: 0.25em 0 0.25em 0;}
+.content .max{width:100%;color: #333; font-size: 0.6em; background: #f6c65e;  text-align: center; line-height: 1.5rem;}
+.content .max_p{width: 15rem; margin: 0 auto; line-height: 1.55rem; color: #666; border-bottom: 1px solid #f8f8f8;font-size: 0.6em;}
+.con_min ul{ width:15rem; margin: 0 auto;}
+.con_min ul li{ line-height: 1.3rem; color: #666; font-size: 0.6em;} 
+.con_min ul li span{ width: 30%;}
+.con_min ul li p{ width: 70%;}
+.content .tip{ height:1.75rem; line-height: 1.75rem; text-align: center; font-size: 0.65em; color: #666; margin: 0.25rem 0; background: #fff;}
+.content .tip i{width:0.65rem; height: 0.65rem; display: inline-block;  background: url(../images/icon_call.png) no-repeat center; background-size: 100% 100%; margin-right: 0.5em;}
+.text{margin-bottom: 3.875em; margin-top: 2em;}
+.text .tet{ margin-bottom: 0.5em;}
+.text p{ font-size:0.5em; color: #c3c3c3; line-height: 1.3em; text-align: center;}
+.bottom{width: 100%; height: 1.875em;background: #fff;position: fixed;bottom: 0; left: 0; }
+.bottom ul{width: 100%; line-height:1.875em;}
+.bottom ul li{width:100%;line-height:1.875em;}
+.bottom ul li p{float: right;font-size:0.6em;margin-right: 0.5em;}
+.bottom ul li p .dark{background: #f1f1f1;padding: 0.5em 1em; color:#666666;margin-right: 0.5em;}
+.bottom ul li p .light{background: #fddf97;padding: 0.5em 1em;color:#666666;}
+/*拨打电话弹框*/
+.s_show{ width:100%; height: 100%; position:fixed ; top:0; left: 0; background: #000;background: rgba(0,0,0,0.3);  z-index: 999999; display:none;}
+.s_show .shadow{ width: 9.5rem; height: 5.275rem; position:absolute; top: 50%; left: 50%; margin-top:-2.637em; margin-left:-4.75em; background: #fff; border-radius: 0.3em;}
+.s_show .shadow .s_mng{ position: absolute;top: -0.5em;right: -0.3em;width: 0.9em;height: 0.9em;background: url(../images/icon_2.png) no-repeat;background-size: 0.9em 0.9em;}
+.s_show .shadow .s_tel{ margin-top: 1.6em;}
+.s_show .shadow .s_tel span{display: block; font-size: 0.65em; color: #666; text-align: center;height: 1rem; line-height: 1rem;}
+ 

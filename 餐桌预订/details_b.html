@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no," />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>订单详情</title>
+		<link rel="stylesheet" href="css/Restaurant.css"/>	
+	</head>
+	<body style=" background: #f1f1f1;">
+	<!--头部-->
+	<div class="top">
+		<p>
+			<a href="cancellation.html"><img src="images/icon_1.png"></a>订单详情
+		</p>
+	</div>
+	<!--头部-->
+	<!--主体-->
+		<div class="content">
+			<p class="max">预定成功</p>
+			<div class="con_min">				
+				<p class="max_p">餐饮</p>
+				<ul>
+					<li class="clear">
+						<span class="fl">用餐时间 : </span>
+						<p class="fl">2016-10-8 &nbsp;&nbsp;12:00</p>
+					</li>
+					<li class="clear">
+						<span class="fl">用餐人数 : </span>
+						<p class="fl">4人</p>
+					</li>
+					<li class="clear">
+						<span class="fl">订桌类型 : </span>
+						<p class="fl">仅包间</p>
+					</li>
+				</ul>
+			</div>
+			<div class="con_min">								
+				<ul>
+					<li class="clear">
+						<span class="fl">用餐姓名 : </span>
+						<p class="fl">张三</p>
+					</li>
+					<li class="clear">
+						<span class="fl">用餐人手机号 : </span>
+						<p class="fl">15523451777</p>
+					</li>			
+				</ul>
+			</div>
+			<div class="con_min">								
+				<ul>
+					<li class="clear">
+						<span class="fl">代订人姓名 : </span>
+						<p class="fl">张三</p>
+					</li>
+					<li class="clear">
+						<span class="fl">代订人手机号 : </span>
+						<p class="fl">15523451777</p>
+					</li>			
+				</ul>
+			</div>
+			<div class="tip">				
+					<p><i></i>联系酒店</p>
+			</div>
+			<div class="con_min">								
+				<ul>
+					<li class="clear">
+						<span class="fl">订单编号 : </span>
+						<p class="fl">054612345676534</p>
+					</li>
+					<li class="clear">
+						<span class="fl">提交时间 : </span>
+						<p class="fl">1026-10-4 &nbsp;&nbsp;18:00:35</p>
+					</li>			
+				</ul>
+			</div>
+		</div>
+		<div class="text">
+			<p class="tet">温馨提示</p>
+			<p>请按时到达餐厅，否则您的订单有可能被取消。<br/>如您无法前往，请及时取消预定。谢谢！</p>
+		</div>		
+	<!--主体-->
+	<!--尾部-->
+		<div class="bottom">
+			<ul>
+				<li>
+					<P class="palte1">
+						<a href="javascript:;"><span class="dark s_btn">取消订单</span></a>
+						<a href="javascript:;"><span class="light">再次预定</span></a>
+					</P>
+				</li>				
+			</ul>
+		</div>	
+	<!--拨打电话弹框-->
+	<div class="s_show">
+		<div class="shadow">
+			<p class="s_mng">				
+			</p>
+			<p class="s_tel">
+				<span>如需取消订单，请拨打电话</span>
+				<span>联系方式:15523457777</span>
+			</p>
+		</div>
+	</div>
+	
+	<script src="js/oder.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<!--拨打电话弹框-->
+	<script>
+		$(function(){
+			$('.s_btn').click(function(){
+				$('.s_show').fadeIn();
+			});
+			$('.s_mng').click(function(){
+				$('.s_show').fadeOut();
+			})
+		});
+	</script>
+	</body>
+</html>
